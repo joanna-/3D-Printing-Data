@@ -23,6 +23,15 @@ The data is saved in _json_ files and each line contains separate sample. Exampl
 {"status": "I", "coords": {"axesHomed": [1, 1, 1], "extr": [0.0], "xyz": [0.0, 0.0, 173.0]}, "currentTool": -1, "params": {"atxPower": 0, "fanPercent": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], "speedFactor": 100.0, "extrFactors": [100.0], "babystep": 0.0}, "seq": 2, "sensors": {"probeValue": 0, "fanRPM": 0}, "temps": {"bed": {"current": 24.9, "active": 0.0, "state": 0, "heater": 0}, "current": [24.9, 25.1, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0, 2000.0], "state": [0, 0, 0, 0, 0, 0, 0, 0], "heads": {"current": [25.1], "active": [210.0], "standby": [0.0], "state": [0]}, "tools": {"active": [[210.0]], "standby": [[0.0]]}, "extra": [{"name": "MCU", "temp": 39.0}]}, "time": 408.9, "timestamp": 1571996868631}
 ```
 
+Because the data is nested json, the sugested way to read it into python is:
+
+```python
+import pandas as pd
+from pandas.io.json import json_normalize
+df = pd.read_json('interface.json', lines=True)
+df = json_normalize(df.to_dict('records'))
+```
+
 ### Data format of custom measurements
 
 The data of custom measurements is saved in _csv_ files with no headers and standard comma delimeter. There are following columns:
