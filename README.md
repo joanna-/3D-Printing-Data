@@ -1,6 +1,6 @@
 # 3D-Printing-Data
 
-This repository contains data gathered from 3D printing machine MonkeyFab Spire. Each directory contains data samples gathered from different prints, some of them being fault. The data 
+This repository contains data gathered from 3D printing machine MonkeyFab Spire. Each directory contains data samples gathered from different prints, some of them being fault. 
 
 ## Data usage 
 
@@ -47,8 +47,8 @@ The files contain data from the following faulty situations:
 
 The directory structure is as follows:
 
-  \four_towers - data related to printing towers model
-  \monkeyfab_logo - data related to printing of monkeyfab logo with three monkeys figures
+ * _\four_towers_ - data related to printing towers model
+ * _\monkeyfab_logo_ - data related to printing of monkeyfab logo with three monkeys figures
 
 Data files are organised in the following subdirectories:
 
