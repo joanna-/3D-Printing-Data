@@ -2,6 +2,10 @@
 
 This repository contains data gathered from 3D printing machine MonkeyFab Spire. Each directory contains data samples gathered from different prints, some of them being fault. The data 
 
+## Data usage 
+
+You are free to use this data under *Creative Commons Attribution 4.0 International* license. If you use our data, please cite us as #TODO. 
+
 ## Data format
 
 Generally, repository contains two types of data files:
@@ -54,3 +58,7 @@ Data files are organised in the following subdirectories:
 4. _bowden_
 
 And each of them contain two files: **.csv** one with data from custom-made measuremenet devices and **.json** file with data coming from the printer interface.
+
+## Acknowledgments
+**
+Data presented in this repository was gathered, preprocessed and published as part of the project **LIDER/15/0144/L-7/15/NCBR/2016**. 
