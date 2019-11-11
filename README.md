@@ -19,6 +19,24 @@ Generally, repository contains two types of data files:
 
 ### Data format of custom measurements
 
+The data of custom measurements is saved in _csv_ files with no headers and standard comma delimeter. There are following columns:
+
+* **0** - contains data id assigned as the relative time set up on the device
+* **1-3** - 3-dimensional data from the first accelerometer (X, Y, Z axis respectively)
+* **4-6** - 3-dimensional data from the second accelerometer (X, Y, Z axis respectively)
+* **7** - tension measurements
+* **8** - timestamp
+
+In order to provide better understanding of the data, the following python script can be used to read data:
+```python
+import pandas as pd
+df = pd.read_csv('accel.txt', names=['data_id', 'accel0X', 'accel0Y', 'accel0Z', 'accel1X', 'accel1Y',
+                                'accel1Z', 'tension', 'timestamp'])
+df['time'] = pd.to_datetime(df['timestamp'], unit='ms')
+```
+
+TODO: konwersja tension na przyspieszenie ziemskie?
+
 ## Data files
 
 Reference properly made print:
