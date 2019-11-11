@@ -15,14 +15,42 @@ Generally, repository contains two types of data files:
 
 ### Data format of custom measurements
 
-## Faulty situations
+## Data files
+
+Reference properly made print:
+
+<img src="docs/proper.jpg" alt="proper print image" height="250"/>
 
 The files contain data from the following faulty situations:
 
 1. Finish of 3D printing plastic.
+
+<img src="docs/plastic_lack.jpg" alt="plastic lack image" height="250"/>
+
 2. Bowden tube fallout.
+
 3. Wrong retraction setup.
+
+<img src="docs/wrong_retraction.jpg" alt="wrong retraction image" height="250"/>
+
 4. 
+
 5. Unsticking of the printed model.
 
+<img src="docs/unstick.jpg" alt="unstick image" height="250"/>
+
 ## Repository organization
+
+The directory structure is as follows:
+
+  \four_towers - data related to printing towers model
+  \monkeyfab_logo - data related to printing of monkeyfab logo with three monkeys figures
+
+Data files are organised in the following subdirectories:
+
+1. _proper_ - reference print
+2. _plastic_lack_ 
+3. _unstick_
+4. _bowden_
+
+And each of them contain two files: **.csv** one with data from custom-made measuremenet devices and **.json** file with data coming from the printer interface.
