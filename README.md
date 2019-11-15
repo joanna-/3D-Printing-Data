@@ -81,8 +81,14 @@ The files contain data from the following faulty situations:
 The directory structure is as follows:
 
  * _\four_towers_ - data related to printing towers model
- * _\monkeyfab_logo_ - data related to printing of monkeyfab logo with three monkeys figures
-
+ 
+<img src="docs/towers_v01.jpg" alt="four_towers"/> 
+ 
+ * _\four_tower_no_base_ - data related to printing towers model, but without the base
+ 
+<img src="docs/towers_only_v01.jpg" alt="four_towers_no_base"/>
+ 
+Each directory contains **.stl** file with the print source.
 Data files are organised in the following subdirectories:
 
 1. _proper_ - reference print
