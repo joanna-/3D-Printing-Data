@@ -82,11 +82,11 @@ The directory structure is as follows:
 
  * _\four_towers_ - data related to printing towers model
  
-<img src="docs/towers_v01.jpg" alt="four_towers"/> 
+<img src="docs/towers_v01.png" alt="four_towers"/> 
  
  * _\four_tower_no_base_ - data related to printing towers model, but without the base
  
-<img src="docs/towers_only_v01.jpg" alt="four_towers_no_base"/>
+<img src="docs/towers_only_v01.png" alt="four_towers_no_base"/>
  
 Each directory contains **.stl** file with the print source.
 Data files are organised in the following subdirectories:
