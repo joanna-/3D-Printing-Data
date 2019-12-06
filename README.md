@@ -76,6 +76,10 @@ The files contain data from the following faulty situations:
 
 <img src="docs/unstick.jpg" alt="unstick image" height="250"/>
 
+6. Removing part of the print during the printing phase. 
+
+<img src="docs/missing_tower.jpg" alt="missing_tower" height="250"/>
+
 ## Repository organization
 
 The directory structure is as follows:
