@@ -4,16 +4,28 @@ This repository contains data gathered from 3D printing machine MonkeyFab Spire.
 
 ## Data usage 
 
-You are free to use this data under *Creative Commons Attribution 4.0 International* license. If you use our data, please cite us as #TODO. 
+You are free to use this data under *Creative Commons Attribution 4.0 International* license. If you use our data, please [cite us as](https://link.springer.com/chapter/10.1007/978-3-030-77970-2_50#citeas):
+
+<cite>Szydlo T., Sendorek J., Windak M., Brzoza-Woch R. (2021) Dataset for Anomalies Detection in 3D Printing. In: Paszynski M., Kranzlmüller D., Krzhizhanovskaya V.V., Dongarra J.J., Sloot P.M. (eds) Computational Science – ICCS 2021. ICCS 2021. Lecture Notes in Computer Science, vol 12745. Springer, Cham. https://doi.org/10.1007/978-3-030-77970-2_50 </cite>
+
+## Measurement devices characteristics
+
+The printer has been equipped with additional custom sensors developed as part of the FogDevices4 research project. Data from them was collected using a device assembled using
+modular hardware components. The printer has been equipped with two inertial measurement unit (IMU) sensors LSM9DS1 that can measure
+acceleration, angular rate and magnetic field in 3 axis but
+only linear acceleration was used in this case. First of the
+sensors, called accel0 is attached to the printing platform and
+accel1 is on the print head. Both of the sensors use the I2C
+digital interface and are connected to the FogDevices hardware
+platform.
+
 
 ## Data format
 
-Generally, repository contains two types of data files:
+Repository contains two types of data files:
 
-* data from printer web interface 
-* data from custom made measurement devices: accelerometer, gyroscope and ...
-
-### Measurement devices characteristics
+* Data that is provided by the web interface is in json file, in which each line contain different data sample object.
+* Custom measurements are stored in files with csv format without header line and with a standard comma separator. 
 
 ### Data format of web interface
 
@@ -49,8 +61,6 @@ df = pd.read_csv('accel.txt', names=['data_id', 'accel0X', 'accel0Y', 'accel0Z',
                                 'accel1Z', 'tension', 'timestamp'])
 df['time'] = pd.to_datetime(df['timestamp'], unit='ms')
 ```
-
-TODO: konwersja tension na przyspieszenie ziemskie?
 
 ## Data files
 
