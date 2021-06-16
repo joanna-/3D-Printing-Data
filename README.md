@@ -80,7 +80,7 @@ The files contain data from the following faulty situations:
 
 <img src="docs/wrong_retraction.jpg" alt="wrong retraction image" height="250"/>
 
-4. 
+4. Arm failure.
 
 5. Unsticking of the printed model.
 
